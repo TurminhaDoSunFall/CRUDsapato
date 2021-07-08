@@ -21,9 +21,9 @@ class Form
     if (isset($_POST["estilo"]) && isset($_POST["cor"]) && isset($_POST["tamanho"])) {
       try {
         $conexao = Transaction::get();
-        $estilo = $conexao->quote($_POST["paciente"]);
-        $cor = $conexao->quote($_POST["diag"]);
-        $tamanho = $conexao->quote($_POST["idade"]);
+        $estilo = $conexao->quote($_POST["estilo"]);
+        $cor = $conexao->quote($_POST["cor"]);
+        $tamanho = $conexao->quote($_POST["tamanho"]);
         $crud = new Crud();
         if (empty($_POST["id"])) {
           $retorno = $crud->insert(
