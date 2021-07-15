@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="POST" action="?acao=Form&metodo=salvar">
+    <input type="hidden" name = "id" value = "{id}" />
+    <fieldset>
+      <legend>Cadastro</legend>
+      <label>Estilo:</label>
+      <p><input value = "{estilo}" type="text" name="estilo" required /><br/></p>
+      <label>Cor do sapato:</label>
+      <p>
+      <input value = "{cor}"  type="text" name="cor" required /><br/>
+      </p>
+      <label>Tamanho:</label>
+      <p>
+      <input value = "{tamanho}" type="number" name="tamanho" required /><br/>
+      </p>
+      <button type="submit">Salvar</button>
+    </fieldset>
+  </form>
+</body>
+</html>
+
